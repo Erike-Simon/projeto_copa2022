@@ -14,10 +14,10 @@ import streamlit as st
 # Configurações iniciais
 
 # 'selecoes' e 'jogos' são do tipo Series
-selecoes = pd.read_excel('C:/Users/Erike Simon/Documents/repos/projeto_copa2022/DadosCopaDoMundoQatar2022.xlsx', sheet_name ='selecoes', index_col = 0) # 'index_col = 0' indica o número da coluna
+selecoes = pd.read_excel('DadosCopaDoMundoQatar2022.xlsx', sheet_name ='selecoes', index_col = 0) # 'index_col = 0' indica o número da coluna
                                                                                                   # que deve ser utilizada com índice ao carregar
                                                                                                   # o arquivo. nesse caso, índice 0 = 'selecoes'
-jogos = pd.read_excel('C:/Users/Erike Simon/Documents/repos/projeto_copa2022/DadosCopaDoMundoQatar2022.xlsx', sheet_name ='jogos')
+jogos = pd.read_excel('DadosCopaDoMundoQatar2022.xlsx', sheet_name ='jogos')
 
 # As duas estruturas de dados principais que a biblioteca pandas utiliza são: DataFrame e Series. O DataFrame é uma estrutura
 # bidimensional com linhas e colunas nomeadas, similar a uma tabela SQL. Já a estrutura Series é um array
@@ -138,7 +138,7 @@ for i in range(jogos.shape[0]):                                             # A 
     jogos.at[i,'empate'] = e                                                # valor em um DataFrame ou Series. No caso em questão, além de obter o valor, estamos atribuindo 'v', 'e' ou 'd'
     jogos.at[i,'derrota'] = d
 
-jogos.to_excel('C:/Users/Erike Simon/Documents/repos/projeto_copa2022/outputEstimativasJogosCopa.xlsx', index = False)            # Salva um arquido .xlsx com os dados e porcentagem implementados
+jogos.to_excel('outputEstimativasJogosCopa.xlsx', index = False)            # Salva um arquido .xlsx com os dados e porcentagem implementados
 
 # INICIO DO APP
 
@@ -178,7 +178,7 @@ st.table(matriz.applymap(aux))          # .applymap(aux) aplica valor de % em to
 st.markdown('---')
 st.markdown("## 🌍 Probabilidades dos Jogos da 1 ª Fase") 
 
-jogoscopa = pd.read_excel('C:/Users/Erike Simon/Documents/repos/projeto_copa2022/outputEstimativasJogosCopa.xlsx', index_col = 1)
+jogoscopa = pd.read_excel('outputEstimativasJogosCopa.xlsx', index_col = 1)
 st.table(jogoscopa[['grupo', 'seleção1', 'seleção2', 'vitória', 'empate', 'derrota']])
 
 
