@@ -4,4 +4,4 @@ The first part of the project consists of a web application that statistically p
 
 Application link: https://worldcupgames22.streamlit.app
 
-In the second part of the project, an AI was developed that predicts from simulations based on the FIFA ranking, the probability of the possible champion soccer  selections of the Qatar 2022 World Cup, in addition to also predicting the probabilities of advancement and elimination per stage for all classified soccer  selections for the Cup.
+In the second part of the project, an AI was developed that predicts from simulations based on the FIFA ranking, the probability of the possible champion soccer selections of the Qatar 2022 World Cup, in addition to also predicting the probabilities of advancement and elimination per stage for all classified soccer selections for the Cup.
