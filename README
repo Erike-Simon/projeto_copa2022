@@ -1,3 +1,10 @@
-Qatar 2022 world cup results prediction project
+###Qatar 2022 world cup results prediction project
+
+The first part of the project consists of a web application that statistically predicts scores of matches between any qualified soccer selections for the world cup in
+Qatar, which are displayed through a table and the odds for all the games of the first phase of the cup. These results are based on the FIFA ranking.
 
 Application link: https://worldcupgames22.streamlit.app
+
+In the second part of the project, an AI was developed that predicts from simulations based on the FIFA ranking, the probability of the possible champion soccer 
+selections of the Qatar 2022 World Cup, in addition to also predicting the probabilities of advancement and elimination per stage for all classified soccer 
+selections for the Cup.
